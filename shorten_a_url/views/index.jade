@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= title
+	h1.text-center Node.js URL Shortener
+ 
+	div.container
+		div.content
+		div.well
+		form.form-horizontal(action="/", method="post")
+			div.form-group(align='center')
+				p
+				input.form-control(type="text", name="userURL", placeholder="Enter a URL")
+				p
+				input.btn.btn-primary(type="submit", value="Shorten")
